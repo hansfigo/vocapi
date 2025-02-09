@@ -9,13 +9,8 @@ Work in Progress (WIP) – This library is still in development. More features w
 ```ts
 import Vocapi from "vocapi";
 
-const albumId = 123;
+const album = await Vocapi.album.get(619)
 
-Vocapi.album.getAlbum(albumId)
-  .then(album => console.log(album))
-  .catch(error => console.error(error));
+const albumList = await Vocapi.album.search({ query: "Skatsune Miku" })
 
-Vocapi.album.searchAlbums({ query: "Skatsune Miku" })
-  .then(album => console.log(album))
-  .catch(error => console.error(error));
 ```
