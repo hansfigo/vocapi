@@ -14,4 +14,8 @@ const albumId = 123;
 Vocapi.album.getAlbum(albumId)
   .then(album => console.log(album))
   .catch(error => console.error(error));
+
+Vocapi.album.getAlbum({ query: "Skatsune Miku" })
+  .then(album => console.log(album))
+  .catch(error => console.error(error));
 ```
