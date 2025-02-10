@@ -4,15 +4,26 @@ import Vocapi from "../src/index";
 
 const v = new Vocapi();
 
-test("getAlbums", async () => {
+test("Search Album", async () => {
     const albums = await v.album.search({ query: "Skatsune Miku" });
-    console.log(albums, "FUFUGAZER");
     expect(albums).toBeDefined();
     expect(albums.items.length).toBeGreaterThan(0);
 });
 
-
-test("getAlbumsByID", async () => {
+test("Get Album by Id", async () => {
     const album = await v.album.get(1);
     expect(album).toBeDefined();
+});
+
+test("Get Top Albums", async () => {
+    const albums = await v.album.getTop();
+
+    expect(albums).toBeDefined();
+    expect(albums.items.length).toBeGreaterThan(0);
+})
+
+test("Get Latest Albums", async () => {
+    const albums = await v.album.getLatest();
+    expect(albums).toBeDefined();
+    expect(albums.items.length).toBeGreaterThan(0);
 });
