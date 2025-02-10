@@ -9,8 +9,10 @@ Work in Progress (WIP) – This library is still in development. More features w
 ```ts
 import Vocapi from "vocapi";
 
-const album = await Vocapi.album.get(619)
+const v = new Vocapi();
 
-const albumList = await Vocapi.album.search({ query: "Skatsune Miku" })
+const album = await v.album.get(619)
+
+const albumList = await v.album.search({ query: "Skatsune Miku" })
 
 ```
