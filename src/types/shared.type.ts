@@ -1,11 +1,11 @@
-interface ApiResponse<T> {
+interface IApiResponse<T> {
     items: T;
     totalCount: number;
     term?: string;
 }
 
 
-interface ReleaseDate {
+interface IReleaseDate {
     day: number;
     isEmpty: boolean;
     month: number;

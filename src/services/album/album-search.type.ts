@@ -55,7 +55,7 @@ interface AdvancedAlbumFilter {
 }
 
 
-interface SearchAlbumsQueryParams {
+interface ISearchAlbumsQueryParams {
     query?: string;
     discTypes?: DiscTypeEnum;
     tagName?: string[];

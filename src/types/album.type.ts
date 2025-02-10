@@ -1,6 +1,6 @@
-interface Album {
+interface IAlbum {
     artistString: string;
-    catalogNumber? : string;
+    catalogNumber?: string;
     createDate: string; // ISO date string
     defaultName: string;
     defaultNameLanguage: string;
@@ -9,13 +9,13 @@ interface Album {
     name: string;
     ratingAverage: number;
     ratingCount: number;
-    releaseDate: ReleaseDate;
+    releaseDate: IReleaseDate;
     status: string;
     version: number;
-    artists?: AlbumArtist<Artist>[];
+    artists?: IAlbumArtist<IArtist>[];
 }
 
-interface AlbumArtist<T> {
+interface IAlbumArtist<T> {
     artist: T;
     categories: string;
     effectiveRoles: string;

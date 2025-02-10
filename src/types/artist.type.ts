@@ -1,4 +1,4 @@
-interface Artist {
+interface IArtist {
     additionalNames: string;
     artistType: string;
     deleted: boolean;
