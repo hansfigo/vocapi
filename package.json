@@ -1,13 +1,16 @@
 {
-  "name": "vocajs",
-  "version": "1.0.0",
+  "name": "vocapi",
+  "version": "0.0.0",
   "description": "VocaDB API Typescript Wrapper",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "vitest",
     "build": "tsc"
   },
-  "type": "module",
   "author": "hnzbyte",
   "license": "ISC",
   "keywords": [
