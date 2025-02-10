@@ -13,7 +13,8 @@
         "skipLibCheck": true
     },
     "lib": [
-        "esnext"
+        "esnext",
+        "ES2015",
     ],
     "include": [
         "src"
