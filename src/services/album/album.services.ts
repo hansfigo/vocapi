@@ -1,4 +1,6 @@
 import ax from "../../config/axios";
+import { ISearchAlbumsQueryParams } from "./album-search.type";
+import { IGetAlbumQueryParams, ILatestAlbumsQueryParams, ITopAlbumsQueryParams } from "./album.type";
 
 const albumServices = {
     async search(params?: ISearchAlbumsQueryParams): Promise<IApiResponse<IAlbum[]>> {

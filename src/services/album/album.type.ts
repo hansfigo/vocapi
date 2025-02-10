@@ -31,3 +31,5 @@ interface IGetAlbumQueryParams {
     songFields?: SongFieldsEnum;
     lang?: LangEnum;
 }
+
+export { IGetAlbumQueryParams, ILatestAlbumsQueryParams, ITopAlbumsQueryParams };
