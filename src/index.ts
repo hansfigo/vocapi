@@ -1,9 +1,9 @@
 import albumServices from "./services/album/album.services";
 
-const Vocapi = {
-    album: albumServices,
-};
+class Vocapi {
+    album = albumServices;
+}
 
-export default Vocapi;
 export { albumServices };
+export default Vocapi;
 
